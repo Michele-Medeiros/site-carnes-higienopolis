@@ -1,0 +1,249 @@
+body {
+  background-color: #35383B
+}
+
+
+@font-face {
+  font-family: "Fira Sans Condensed";
+  src: url("fontes/fira_sans_condensed/medium.ttf") format("truetype");
+}
+
+/* @font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('fontes/fira_sans_condensed/mediumItalic.ttf') format('truetype');
+} */
+
+@font-face {
+  font-family: "Lobster";
+  src: url("fontes/lobster/regular.ttf") format("truetype");
+}
+
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  /* color: #1B1C20; */
+  color: #d8d8d8;
+  text-decoration: none;
+  /* font-family: sans-serif; */
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #ef7d00;
+}
+
+#logo {
+  width: 50px;
+  height: 42px;
+  margin-top: 0px;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0e0d0d;
+  opacity: 90%;
+  font-family: "fira_sans_condensed", sans-serif;
+  text-transform: uppercase;
+  opacity: 95%;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.8rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.8rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 100px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #0e0d0d;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    /* height: 287px; */
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #d8d8d8;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+.conteiner {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* FIM DO HEADER */
+
+/* COMEÇO DO BLOCO DE RECEITAS */
+
+#H1-titulo {
+  font-family: "lobster", sans-serif;
+  color: #ef7d00;
+  margin: 30px 0px;
+  font-size: 65px;
+  padding-top: 45px;
+  padding-bottom: 27px;
+  border-bottom: 2px solid #965006;
+}
+
+.sobre {
+  background-color: #35383b !important;
+  text-align: justify;
+}
+
+#texto_sobre {
+  color: #d8d8d8;
+  font-size: 20px;
+  margin-bottom: 200px;
+  line-height: 2;
+}
+
+h2 {
+    font-family: "fira_sans_condensed";
+    color: #EF7D00;
+    /* margin: 30px 0px; */
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#tttt {
+
+  color: #d8d8d8;
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.rendimento{
+font-size: 18px;
+color: #ef7d00;
+padding-top: 35px;
+padding-bottom: 35px
+}
+
+/* FIM DO BLOCO DE RECEITAS */
+
+/* INICIO DO FOOTER  */
+
+footer {
+  display: flex;
+  background-color: #0e0d0d;
+  font-family: "fira_sans_condensed";
+  /* margin-top: 50px; */
+
+}
+
+#caixa {
+  margin-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+footer h2 {
+  border-bottom: 2px solid #707070;
+  width: 310px;
+  color: #ef7d00;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+footer h2 {
+  border-bottom: 2px solid #707070;
+  width: 165px;
+  color: #ef7d00;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+footer h2{
+  border-bottom: 2px solid #707070;
+  width: 326px;
+  color: #ef7d00;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+footer p {
+  color: #d8d8d8;
+  font-size: 12px;
+}
+
+/* FOOTER ESTILO - FIM */

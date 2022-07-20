@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Mobile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+        	.whatsapp-link {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 40px;
+			right: 40px;
+			background-color: #25d366;
+			color: #fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 1px 1px 2px #888;
+			z-index: 1000;
+		}
+ 
+		.fa-whatsapp {
+			margin-top: 16px;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<!-- /* botão whatsapp */ -->
+
+<a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511977056627" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+</a>
+<!-- /* fim botão whatsapp */ -->
+
+    <header id="header">
+        <a id="logo" href="./index.html"><img src="imagens/logo.png" /></a>
+
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a id="a-sobre" href="#sobre">Sobre</a></li>
+                <li><a id="a-receitas" href="#RECEITAS">Receitas</a></li>
+                    <!-- <ul>
+                        <li><a href="./Receita_1.html"> Picanha recheada com Provolone </a></li>
+                        <li><a href="./Receita_2.html"> Bife a Rolê - Coxão Mole </a></li>
+                        <li><a href="./Receita_3.html"> Frango à passarinho de forno</a></li>
+                        <li><a href="./Receita_4.html"> Lombinho Assado com Batata</a></li>
+                        <li><a href="./Receita_5.html"> Filé de Tilápia </a></li>
+                    </ul> -->
+                <li><a href="./produtos_bovinos.html">Bovinos</a></li>
+                <li><a href="./produtos_aves.html">Aves</a></li>
+                <li><a href="./produtos_suinos.html">Suínos</a></li>
+                <li><a href="./produtos_pescados.html">Pescados</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <div>
+            <p class="marca">Carnes Higienópolis</p>
+            <p class="slogan">Praticidade & Qualidade </p>
+        </div> -->
+    <div class="conteiner">
+        <!-- <source src="imagens/bg_teste_1 .jpg" media="max-widht 1300px" />
+        <source src="imagens/bg_teste_2.jpg" media="max-widht 1280px" />
+        <source src="imagens/bg_teste_3.jpg" media="max-widht 1125px" /> -->
+        <img src="imagens/bg_teste_1.jpg" alt="" />
+    </div>
+
+    <div class="row sobre" id="sobre">
+        <div class="col-12 text-center mx-auto" style="width: 70%">
+            <h1 id="H1-titulo">Sobre Nós</h1>
+            <p id="texto_sobre">
+                Localizada no bairro de Higienópolis, o açougue Carnes Higienópolis
+                surgiu em 2001 com a proposta de tornar-se referência. Aliando carnes
+                de frigoríficos conceituados e já consagrados com o uso da técnica de
+                embalagem a vácuo, conseguimos garantir um processo mais higiênico,
+                que mantém o peso do produto e facilita o transporte. Além de
+                garantirmos excelentes produtos, o atendimento ao cliente também é uma
+                de nossas prioridades, no açougue Carnes Higienópolis você encontra um
+                atendimento diferenciado com sistema informatizado que diferencia o
+                cliente tornando-o único com personalizado e entregue em sua casa.
+            </p>
+        </div>
+    </div>
+
+    <!-- TESTE PÁG DE PRODUTOS -->
+
+    <div class="conteiner3 col-12 text-center mx-auto" style="width: 75%">
+        <div class=" b_texto">
+            <p class="op qualidade">+ 50 opções de produtos,</p>
+            <p class="qualidade">para garantir a sua total satisfação</p>
+        </div>
+
+    </div>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet"> -->
+
+    <div class="conteiner4">
+
+        <div class="padding">
+
+            <div class="hover_wrap">
+                <div class="figure-wrapper" id="b1">
+                    <figure class="hover5 text-center">
+                        <h1 class="nomes">Bovinos</h1>
+                        <img src="./imagens/bot_boi.png" alt="figura boi" />
+                        <a href="./produtos_bovinos.html">
+                            <figcaption>
+                                <strong>Confira nossos produtos</strong>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+    
+                <div class="figure-wrapper" id="s1">
+                    <figure class="hover6 text-center">
+                        <h1 class="nomes">Suínos</h1>
+                        <img src="./imagens/bot_porco.png" alt="figura porco" />
+                        <a href="./produtos_suinos.html">
+                            <figcaption>
+                                <strong>Confira nossos produtos</strong>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+    
+    
+            <div class="conteiner4">
+                <div class="hover_wrap" id="a1">
+                    <div class="figure-wrapper">
+                        <figure class="hover5 text-center">
+                            <h1 class="nomes">Aves</h1>
+                            <img src="./imagens/bot_galo.png" alt="figura boi" />
+                            <a href="./produtos_aves.html">
+                                <figcaption>
+                                    <strong>Confira nossos produtos</strong>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+    
+                    <div class="figure-wrapper" id="p1">
+                        <figure class="hover6 text-center">
+                            <h1 class="nomes">Pescados</h1>
+                            <img src="./imagens/bot_peixe.png" alt="figura porco" />
+                            <a href="./produtos_pescados.html">
+                                <figcaption>
+                                    <strong>Confira nossos produtos</strong>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+    
+            </div>
+    
+
+        </div>
+
+        
+        <!-- FIM DOS TESTES COM A PÁGINA DE PRODUTO -->
+
+        <div id="fundo" style="background-image: url(./imagens/bg_r3.jpg);">
+            <div class="conteiner2">
+                <div class="titulo_receitas" id="RECEITAS">Receitas</div>
+
+                <div class="mindle">
+                    <a href="./Receita_1.html" class="btn btn3">Picanha recheada com Provolone</a>
+
+                </div>
+
+                <div class="mindle">
+                    <a href="./Receita_2.html" class="btn btn3">Bife a Rolê - Coxão Mole</a>
+                </div>
+
+                <div class="mindle">
+                    <a href="./Receita_3.html" class="btn btn3">Frango à passarinho de forno</a>
+                </div>
+
+                <div class="mindle">
+                    <a href="./Receita_4.html" class="btn btn3">Lombinho Assado com Batata</a>
+                </div>
+
+                <div class="mindle" id="tilápia">
+                    <a href="./Receita_5.html" class="btn btn3">Filé de Tilápia</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inicio do maps -->
+
+        <div class="cointeiner6 base">
+            <h1>Como chegar ao Carnes Higienópolis</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14630.714834947536!2d-46.6651194731161!3d-23.54405560506182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583736979d9d%3A0x3a29108beed24481!2sCarnes%20Higienopolis!5e0!3m2!1spt-BR!2sbr!4v1653459840972!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <!-- fim do maps -->
+
+        <footer>
+            <div class="texto_footer">
+                <h2>Endereço</h2>
+                <div>
+                    <p>Rua Alagoas, 126 - Higienópolis São Paulo - Sp Cep: 01242001</p>
+                </div>
+    
+                <h2>Horário de Funcionamento</h2>
+                <div>
+                    <p>Segunda-feira a Sexta-feira: 7:30h às 18h</p>
+                    <p>Sábado: 7:30h às 13h</p>
+                    <p>Domingo: fechado</p>
+                </div>
+    
+    
+                <h2>Fale Conosco</h2>
+                <div>
+                    <p>telefone: (11) 32571133</p>
+                    <p>Whatsapp:(11) 977056627</p>
+                    <p>Instagram: @Carneshigienopolis</p>
+                </div>
+    
+            </div>
+        </footer>
+
+        <!-- Teste novo footer -->
+
+        <!-- Teste novo footer -->
+        
+
+        <script type="text/javascript" src=" js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+
+</body>
+
+</html>
+
+
+

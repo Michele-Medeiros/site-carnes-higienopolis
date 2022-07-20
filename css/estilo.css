@@ -1,0 +1,503 @@
+@font-face {
+  font-family: "Fira Sans Condensed";
+  src: url("fontes/fira_sans_condensed/medium.ttf") format("truetype");
+}
+
+/* @font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('fontes/fira_sans_condensed/mediumItalic.ttf') format('truetype');
+} */
+
+@font-face {
+  font-family: "Lobster";
+  src: url("fontes/lobster/regular.ttf") format("truetype");
+}
+
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  /* color: #1B1C20; */
+  color: #d8d8d8;
+  text-decoration: none;
+  /* font-family: sans-serif; */
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #ef7d00;
+}
+
+#logo {
+  width: 50px;
+  height: 42px;
+  margin-top: 0px;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0e0d0d;
+  opacity: 90%;
+  font-family: "fira_sans_condensed", sans-serif;
+  text-transform: uppercase;
+  opacity: 95%;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.8rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.8rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #0e0d0d;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    /* height: 287px; */
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #d8d8d8;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+.conteiner {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* FIM DO MENU */
+
+#H1-titulo {
+  font-family: "lobster", sans-serif;
+  color: #ef7d00;
+  margin: 30px 0px;
+  font-size: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.sobre {
+  background-color: #35383b !important;
+  text-align: justify;
+}
+
+#texto_sobre {
+  color: #d8d8d8;
+  font-size: 20px;
+  margin-bottom: 200px;
+  line-height: 2;
+}
+
+/* INICIO DOS TESTES DOS BOTÕES DE PRODUTOS */
+
+.conteiner4 {
+  position: relative;
+  background: #1b1c20;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: "fira_sans_condensed", sans-serif;
+
+  /* padding-bottom: 65px; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.padding {
+    padding-bottom: 65px;
+}
+
+
+.hover_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover_wrap figure {
+  width: 400px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  background: #1b1c20;
+  border: 2px solid #707070;
+  border-radius: 4px;
+  margin-top: 200px;
+}
+/* ------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+#margem {
+  margin-top: -150px;
+}
+
+.hover_wrap figure img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.hover_wrap figure figcaption {
+  position: absolute;
+
+z-index:2;
+
+  left: 50%;
+  top: 50%;
+
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  background: #c7721d;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.hover_wrap figure figcaption strong {
+ 
+  color: #1b1c20;
+  z-index: 20;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.hover_wrap figure:hover img {
+  opacity: 0.6;
+}
+
+.hover_wrap figure.hover5 figcaption {
+  transform: translate(150%, -50%) rotate(360deg);
+}
+.hover_wrap figure.hover6 figcaption {
+  transform: translate(-250%, -50%) rotate(-360deg);
+}
+.hover_wrap figure:hover figcaption {
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+  .hover_wrap {
+    flex-direction: column;
+  }
+}
+
+.nomes {
+
+  font-family: "lobster", sans-serif;
+  color: #ef7d00;
+  margin: 30px 0px;
+  font-size: 35px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* FIM DOS TESTES COM OS BOTOES DE PRODUTO */
+
+.b_texto {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.conteiner3 {
+  background-color: #ef7d00;
+  font-family: "fira_sans_condense", sans-serif;
+  width: 70%;
+  height: auto;
+  /* padding: 10px; */
+
+  margin-top: -120px;
+  margin-bottom: -100px;
+
+  z-index: 5;
+  position: relative;
+
+  opacity: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.op {
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  color: #1B1C20;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.qualidade {
+  position: relative;
+  font-size: 30px;
+  display: flex;
+  color: #1B1C20;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ESTILO BOTÃO RECEITAS */
+
+.titulo_receitas {
+  font-family: "lobster", sans-serif;
+  font-size: 80px;
+  color: #ef7d00;
+  margin: 30px 0px;
+  margin-top: 0px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#tilápia {
+  margin: 0;
+}
+
+#fundo {
+  height: auto;
+  background-repeat: no-repeat;
+  padding: 50px;
+  margin: 0%;
+  width: 100%;
+}
+
+.container2 {
+  margin: 0;
+  padding: 0;
+  background-color: #1b1c20;
+  opacity: 100%;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1b1c20;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  color: #ef7d00;
+  font-size: 16px;
+  font-family: "fira_sans_condensed";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #ef7d00;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  max-width: 70%;
+  margin-left: 15%;
+}
+
+.btn::before {
+  background: #ef7d00;
+  opacity: 100%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.45s ease;
+  /* width: 100% */
+}
+
+.btn3::before {
+  width: 100%;
+  height: 0%;
+
+  /* transform: translate(-80%,-80%) rotate(45deg); */
+}
+.btn3:hover::before {
+  height: 380%;
+}
+
+.btn3 {
+  background-color: #1b1c20;
+  opacity: 90%;
+}
+
+/* INICIO TESTE GOOGLE MAPS */
+
+.base {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fira_sans_condensed";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1b1c20;
+}
+
+.conteiner6 {
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  color: #d0d1d1;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+iframe {
+  width: 80%;
+  height: 400px;
+  margin-bottom: 80px;
+  border: none;
+}
+
+/* FIM DO GOOGLES MAPS */
+
+/* INICIO DO FOOTER  */
+
+
+
+footer {
+  display: flex;
+  background-color: #0e0d0d;
+  font-family: "fira_sans_condensed";
+  
+}
+
+.texto_footer {
+  margin-left: 15px;
+}
+
+#caixa {
+  margin-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+
+footer h2 {
+  border-bottom: 2px solid #707070;
+  width: 310px;
+  color: #ef7d00;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+footer h2 {
+  border-bottom: 2px solid #707070;
+  width: 165px;
+  color: #ef7d00;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+footer h2{
+  border-bottom: 2px solid #707070;
+  width: 326px;
+  color: #ef7d00;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+
+
+footer p {
+  color: #d8d8d8;
+  font-size: 12px;
+}
